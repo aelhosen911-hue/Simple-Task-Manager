@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: #eef1f6;
+    width: 500px;
+    height: 70vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 7px 11px 5px #6767698c;
+    overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 350px;
+    }
+
+    .form #add {
+        font-size: 12px !important;
+    }
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.form #task {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: #e2e4e6 1px solid;
+}
+
+.form #add {
+    width: 20%;
+    padding: 10px;
+    color: white;
+    background-color: #3d7ed2;
+    font-size: 16px;
+    /* font-weight: ; */
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tasks-container div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px hsl(204deg 13.51% 85.49%);
+}
+
+.tasks-container button {
+    background-color: hsl(1.55deg 75.61% 59.8%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
